@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<p><b>World section</b> for version beta 3<br>
+  <br>
+  This part of the documentation will go into depth about the world section infrastructure. 
+  The first page that come's up has the full map shown on it, this is done from 
+  a gif with hotspots on it. All html for this image with hotspots is in the map.inc 
+  file which has to be done manually, it is hoped that once the game is further 
+  developed that several maps will be made, each of bigger size though each map 
+  will need a seperate towns table to start with in the database.<br>
+  &nbsp;&nbsp;&nbsp;Clicking on one of the area's will bring up that section of 
+  the map and theroetically you can have as many level's as you want though the 
+  default map is only 2 level's deep. At the bottom of the index page is the top 
+  5 people but a simple edit to the world index file would allow more (this may 
+  be put in as a variable in later versions with other types of rank's)<br>
+  <br>
+  Clicking on an area on the bottom level map will bring up the town location 
+  page. This show's all the squares in a town and by deafult is set to 15x15 though 
+  this can be changed in the town.inc file by changing the $tsize vairable. Each 
+  square will have a grafic for the type of building located in that square (though 
+  only a few are avauble at the minute), the alt tag that comes up when the mouse 
+  is put over the square show's the building id number, name of the building and 
+  the owner though more info is planned to be put in there later on, including 
+  production levels and what is being made.<br>
+  <br>
+  Clicking on a square brings up the location page for that exact location. there 
+  are several options for this page<br>
+  1. some one else owns the building - some stats are given about the building<br>
+  2. you own the building - stats are given also some options eg upgrading the 
+  building<br>
+  3. no one owns it - you get the option to buy the land and build on it.<br>
+  <br>
+  when you buy land the next time you go to the location you are given the option 
+  to build a new type of building, this is all done from the .inc file's in the 
+  changeland folder and as you may notice town hall's and captiols (ie type 1 
+  buildings) are not avaible. this will change later on so mayors and presidents 
+  can build other type 1 buildings like military bases.<br>
+  <br>
+  <br>
+  <a href="index.htm">back to the index page </a> </p>
+</body>
+</html>
